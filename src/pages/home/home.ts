@@ -12,9 +12,7 @@ export class HomePage {
 
   public spokenWords : Array<string> = new Array<string>();
 
-  constructor(public navCtrl: NavController) {
-
-  }
+  constructor(public navCtrl: NavController) { }
 
   SpeechToText() {
     window.plugins.speechrecognizer.startRecognize((result) =>{
