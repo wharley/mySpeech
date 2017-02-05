@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Reconhecedor de voz</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button color="primary" full (click) = "SpeechToText()" >
+    <ion-icon name="mic"></ion-icon>
+  </button>
+
+  <ion-list inset>
+    <ion-item *ngFor="let words of spokenWords">{{words}}</ion-item>
+  </ion-list>
+
+
+</ion-content>
